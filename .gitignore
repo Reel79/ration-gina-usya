@@ -1,0 +1,32 @@
+# Publish only the explicit application allowlist.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/style.css
+!/app.js
+!/core.js
+!/products.js
+!/sw.js
+!/version.js
+!/manifest.webmanifest
+!/README.md
+!/icons/
+/icons/*
+!/icons/icon-192.png
+!/icons/icon-512.png
+!/tests/
+/tests/*
+!/tests/core.test.js
+!/tests/sw.test.js
+!/tools/
+/tools/*
+!/tools/build.py
+!/tools/prepare_pages.py
+!/tools/make_icons.py
+!/tools/make_pages_qr.py
+# Exports, archives, launchers, old QR/install pages and notes stay local.
+*.zip
+*.cmd
+*.json
+__pycache__/

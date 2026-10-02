@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#315e48">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Рацион">
+  <meta name="description" content="План питания, покупки и порции для Джины и Уси. Всё хранится на вашем устройстве.">
+  <title>Рацион Джины и Уси</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./version.js"></script>
+  <script defer src="./products.js"></script>
+  <script defer src="./core.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#plan"><img class="brand-icon" src="./icons/icon-192.png" alt="" width="48" height="48"><span>Джина <span class="muted">&</span> Уся<small>ДОМАШНИЙ РАЦИОН</small></span></a><span class="status" id="connection">На вашем устройстве</span></header>
+  <nav class="tabs" aria-label="Разделы приложения"><button data-tab="plan" class="active" aria-current="page">Рацион</button><button data-tab="shopping">Покупки</button><button data-tab="catalog">Продукты</button><button data-tab="settings">Настройки</button></nav>
+  <aside id="update-banner" class="update-banner" role="status" hidden>Доступна новая версия <button class="primary" data-action="update">Обновить</button></aside>
+  <main id="content"></main>
+  <footer>С заботой о Джине и Усе <span aria-hidden="true">·</span> Данные хранятся только у вас</footer>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div><button class="dialog-close" id="close-modal" aria-label="Закрыть окно">×</button></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Включите JavaScript в браузере, чтобы пользоваться калькулятором.</noscript>
+</body>
+</html>
